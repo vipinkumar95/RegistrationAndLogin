@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Welcome to Dashboard</h2>
+
+<h2 style="color:green">@Html.Raw(TempData["message"])</h2>
+
+<h3>Welcome @Session["username"]</h3>
+
+<h4>@Html.ActionLink("Logout", "Logout", "Dashboard")</h4>
+
